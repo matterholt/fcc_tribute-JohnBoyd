@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: center; }
+
+.nav__seasonJump ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center; }
+  .nav__seasonJump ul li {
+    padding: .8em;
+    border-radius: 50%;
+    transform: rotate(-32deg); }
+    .nav__seasonJump ul li a {
+      color: blue; }
+  .nav__seasonJump ul li:hover {
+    background: #8a8a8a; }
+    .nav__seasonJump ul li:hover a {
+      color: #000; }
+
+#title {
+  display: flex;
+  flex-flow: row wrap; }
+
+#main {
+  display: grid;
+  grid-template-columns: 5% repeat(3, 1fr) 5%;
+  grid-auto-flow: row;
+  grid-gap: .5rem; }
+
+#img-div {
+  width: 100%;
+  height: auto; }
+
+btn {
+  display: inline-block;
+  text-decoration: none; }
+
+.triInfo--card {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: #dfe7ff;
+  box-shadow: .2em .3em .5em black; }
