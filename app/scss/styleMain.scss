@@ -1,37 +1,67 @@
+$colorMain: #5D8AA8;
+$colorSecond: #d3dfe7;
+
+
 
 body{
-    margin: 0;
-    font-family: 'Merriweather', serif;
-    font-size: 1.1em;
-    line-height: 1.5em; 
-    text-align: center;
-}
-
+    margin: 0%;
+     font-family: 'Merriweather', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}  
 #title{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    background: linear-gradient( to top, $colorSecond,$colorMain); 
 }
 
 #main{
-
+    display: flex;
+    align-content: center;
+    flex-flow: column;
 }
 
 #img{
-
+    width: 100%;
 }
 
 #img-div{
-
+    padding: 0;
+    margin: 0;
+    border: .2em solid $colorMain;
+    
 }
-
 #img-caption{
-
+    background: white;
+    text-align: center;
 }
-
 #tribute-info{
-
+    background-color: $colorSecond;
+    padding: 0 1em;
 }
 #tribute-link{
-
+   background-color: $colorSecond;
+   text-align: center;
+   p{
+       padding: 0 1em;
+   }
 }
-.triInfo{
 
+@media (min-width: 550px){
+    body{
+        margin: 0% 5%;
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }    
+    #title{
+        width: 100%;
+    }
+}
+@media (min-width: 750px){
+    body{
+        margin: 0% 10%;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }    
 }
